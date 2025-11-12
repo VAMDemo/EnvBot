@@ -1,0 +1,26 @@
+name: GA_Claims_Dev
+
+# Use workflow_dispatch to allow API/Manual triggering
+on:
+  workflow_dispatch:
+
+jobs:
+  Execute_Powershell:
+    runs-on: windows-latest # Must use a Windows runner for native PowerShell execution
+    
+    steps:
+      - name: Test Powershell Script
+        # By default, on Windows runners, 'run' uses the PowerShell shell.
+        run: |
+          Write-Host "Hi from GitHub Action!"
+          Write-Host "---"
+          Start-Sleep -Seconds 5
+          Write-Host "Hi from GitHub Action! 2"
+          Start-Sleep -Seconds 5
+          Write-Host "Hi from GitHub Action! 2"
+          Start-Sleep -Seconds 5
+          Write-Host "Hi from GitHub Action! 3"
+          Start-Sleep -Seconds 5
+          Write-Host "Completed execution of Github action"
+          
+          
