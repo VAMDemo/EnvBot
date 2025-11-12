@@ -1,4 +1,4 @@
-name: GA_Claims_Dev
+name: GA_Policy_Dev
 
 # Use workflow_dispatch to allow API/Manual triggering
 on:
